@@ -1,7 +1,7 @@
 <h1>All my homies numbies</h1>
 
 <% @contacts.each do |contact| %>
-  <h3>Name: <%= contact["friendly_view"]["full_name"] %> </h3>
+  <h3><a href="/client/contacts/<%= contact["id"] %>">Name: <%= contact["friendly_view"]["full_name"] %></a></h3>
   <p>Bio: <%= contact["bio"] %></p>
   <p>Email: <%= contact["email"] %></p>
   <p>Phone Number: <%= contact["phone_number"] %></p>

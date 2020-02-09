@@ -1,0 +1,14 @@
+<h2> <%= @contact["friendly_view"]["full_name"] %> </h2>
+
+<h3> <%= @contact["email"] %> </h3>
+<h3> <%= @contact["phone_number"] %> </h3>
+
+<p> <%= @contact["bio"] %></p>
+<p> <%= @contact["group"] %></p>
+<br>
+<a href="/client/contacts/<%= @contact["id"] %>/edit">Edit contact</a>
+<br>
+<br>
+<a href="/client/contacts">Home</a>
+<br>
+<img src="https://media3.giphy.com/media/Su0MfMNohVXab9huNE/giphy.gif">
